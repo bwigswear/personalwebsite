@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import NavHeader from './components/NavHeader';
 import HomePage from './components/homepage/HomePage';
+import classes from './App.module.css';
 
 const App = () => {
 

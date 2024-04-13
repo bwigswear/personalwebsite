@@ -10,6 +10,7 @@ const NavHeader = () => {
                 <NavButton text='Contact'/>
                 <NavButton text='Projects'/>
                 <SettingsButton />
+                <NavButton icon='../../images/github-mark.png' />
             </ul>
         </nav>
     );
