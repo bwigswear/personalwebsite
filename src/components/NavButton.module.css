@@ -2,13 +2,19 @@
     font-size: 26px;
     font-weight: 800;
     font-family: times new roman, serif;
-    color: #ffffff; /* White text */
-    background-color: transparent; /* Transparent background */
+    color: #ffffff; 
+    background-color: transparent; 
     cursor: pointer;
     border: none;
+    margin: 10px;
 }
 
 .icon {
-    height: 30px;
+    margin: 7px;
+    height: 25px;
     width: 30px;
+}
+
+[src*='git'] {
+    height: 30px;
 }

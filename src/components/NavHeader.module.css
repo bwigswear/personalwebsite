@@ -1,4 +1,22 @@
 .header {
     background-color: #252222a5;
-    height: 70px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+
+    padding: 10px 20px; /* Add padding for spacing */
+}
+
+.internal-links{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    list-style-type: none;
+}
+
+.external-links{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
 }
