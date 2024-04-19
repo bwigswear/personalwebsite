@@ -1,20 +1,21 @@
 .button {
-    font-size: 26px;
+    font-size: 1.7rem;
     font-weight: 800;
     font-family: times new roman, serif;
     color: #ffffff; 
     background-color: transparent; 
     cursor: pointer;
     border: none;
-    margin: 10px;
+    margin: 1rem;
 }
 
 .icon {
-    margin: 7px;
-    height: 25px;
-    width: 30px;
+    margin: 0.5rem;
+    height: 1.6rem;
+    width: 2rem;
 }
 
 [src*='git'] {
-    height: 30px;
+    height: 1.8rem;
+    margin-top: 0.4rem;
 }

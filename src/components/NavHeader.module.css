@@ -1,22 +1,21 @@
 .header {
     background-color: #252222a5;
-    height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between; 
-
-    padding: 10px 20px; /* Add padding for spacing */
 }
 
-.internal-links{
+.internallinks{
     display: flex;
     justify-content: center;
-    flex-grow: 1;
     list-style-type: none;
+    width: 50%;
+    margin-left: 40rem;
 }
 
-.external-links{
+.externallinks{
     display: flex;
     justify-content: flex-end;
-    margin-left: auto;
+    margin-top: 0.5rem;
+    margin-right: 2rem;
 }

@@ -5,13 +5,14 @@ import NavButton from './NavButton';
 const NavHeader = () => {
     return (
         <nav className={classes.header}>
-            <ul className="internal-links">
+            <ul className={classes.internallinks}>
                 <NavButton text='Home'/>
                 <NavButton text='About'/>
                 <NavButton text='Contact'/>
                 <NavButton text='Projects'/>
+                <NavButton text='Interests'/>
             </ul>
-            <ul className="external-links">
+            <ul className={classes.externallinks}>
                 {/*<SettingsButton />*/}
                 <NavButton icon='../../images/gmailicon.png' />
                 <NavButton icon='../../images/github-mark.png' />

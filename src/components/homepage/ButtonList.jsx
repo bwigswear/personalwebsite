@@ -3,9 +3,9 @@ import classes from './ButtonList.module.css';//ex: className={classes.*}
 const ButtonList = () => {
     return (
         <ul>
-            <Button text='Programming Projects'/>
-            <Button text='Professional Interests'/>
-            <Button text='Personal Interests'/>
+            <button text='Programming Projects'/>
+            <button text='Professional Interests'/>
+            <button text='Personal Interests'/>
         </ul>
     );
 };
