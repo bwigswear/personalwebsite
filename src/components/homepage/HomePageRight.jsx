@@ -1,5 +1,5 @@
 import classes from './HomePageRight.module.css';
-import ButtonList from './ButtonList.jsx';
+import HomePageButton from './HomePageButton.jsx';
 
 const HomePageRight = () =>{
 
@@ -7,7 +7,14 @@ const HomePageRight = () =>{
         <div className={classes.rightbox}>
 
             <h1>Dive Deeper...</h1>
-            <ButtonList/>
+            <ul>
+                <HomePageButton text='Who Am I?'/>
+                <HomePageButton text='Get in Contact'/>
+                <HomePageButton text='Some of my Goals'/>
+                <HomePageButton text='Programming Projects'/>
+                <HomePageButton text='Other Projects'/>
+                <HomePageButton text='Personal Interests'/>
+            </ul>
         </div>
     );
 };
