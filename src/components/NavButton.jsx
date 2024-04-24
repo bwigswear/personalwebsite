@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import classes from './NavButton.module.css';
 
 const NavButton = (props) => {
@@ -9,9 +10,13 @@ const NavButton = (props) => {
             </a>
         );
     }else{
-        return <button className={classes.button}>{props.text}</button>;
-    }
+        return (
+        <Link className={classes.button} type='button' to={props.path}>
+            {props.text}
+        </Link>
+        );
+    };
 
-}
+};
 
 export default NavButton

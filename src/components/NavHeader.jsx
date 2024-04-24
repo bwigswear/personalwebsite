@@ -6,11 +6,11 @@ const NavHeader = () => {
     return (
         <nav className={classes.header}>
             <ul className={classes.internallinks}>
-                <NavButton text='Home'/>
-                <NavButton text='About'/>
-                <NavButton text='Contact'/>
-                <NavButton text='Projects'/>
-                <NavButton text='Interests'/>
+                <NavButton text='Home' path='/'/>
+                <NavButton text='About' path='/about'/>
+                <NavButton text='Contact' path='/contact'/>
+                <NavButton text='Projects' path='/projects'/>
+                <NavButton text='Interests' path='/interests'/>
             </ul>
             <ul className={classes.externallinks}>
                 {/*<SettingsButton />*/}

@@ -1,15 +1,15 @@
 import { useState } from 'react';
+import { Outlet } from 'react-router-dom';
 
-import NavHeader from './components/NavHeader';
-import HomePage from './components/homepage/HomePage';
-import classes from './App.module.css';
+import NavHeader from '../components/NavHeader';
+import classes from './PageLayout.module.css';
 
 const App = () => {
 
   return (
     <>
       <NavHeader />
-      <HomePage />
+      <Outlet />
         {/*<h1>Hello World!</h1>
         <ButtonList />
         <SettingsButton onClick={openSettings}/>*/}
