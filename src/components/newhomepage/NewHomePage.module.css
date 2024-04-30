@@ -1,0 +1,32 @@
+.mainBox {
+    background-color: purple;
+
+    position: absolute;
+    top: 10rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    height: 30rem;
+    width: 40rem;
+}
+
+.intro {
+    background-color: red;
+    height: 5rem;
+    font-family: "DM Mono", monospace;
+    display: flex;
+    align-items: center;
+    
+}
+
+.welcome {
+    background-color: blue;
+    height: 5rem;
+    width: 100%;
+}
+
+.buttons {
+    background-color: green;
+    height: 10rem;
+    width: 100%;
+}

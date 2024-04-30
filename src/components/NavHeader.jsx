@@ -14,7 +14,7 @@ const NavHeader = () => {
                 </ul>
                 <ul className={classes.externallinks}>
                     {/*<SettingsButton />*/}
-                    <a href='#'><img src='../../images/gmailicon.png'/></a>
+                    <a href='#'><img src='../../images/mail-icon-black.png'/></a>
                     <a href='#'><img src='../../images/github-logo-black.png'/></a>
                     <a href='#'><img src='../../images/linkedin-logo-black.png'/></a>
                 </ul>
