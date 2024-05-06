@@ -10,7 +10,7 @@ const NavHeader = () => {
                     <Link className={classes.button} type='button' to='/about'>About</Link>
                     <Link className={classes.button} type='button' to='/contact'>Contact</Link>
                     <Link className={classes.button} type='button' to='/projects'>Projects</Link>
-                    <Link className={classes.button} type='button' to='/interestss'>Interests</Link>
+                    <Link className={classes.button} type='button' to='/interests'>Interests</Link>
                 </ul>
                 <ul className={classes.externallinks}>
                     {/*<SettingsButton />*/}

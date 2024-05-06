@@ -1,8 +1,8 @@
 .mainBox {
-    background-color: purple;
+    
 
     position: absolute;
-    top: 10rem;
+    top: 11rem;
 
     display: flex;
     flex-wrap: wrap;
@@ -11,22 +11,41 @@
 }
 
 .intro {
-    background-color: red;
+    color: #fff;
     height: 5rem;
     font-family: "DM Mono", monospace;
     display: flex;
     align-items: center;
-    
+    position: relative;
+    left: 3rem;
+    font-size: 3rem;
+    gap: 1rem;
 }
 
 .welcome {
-    background-color: blue;
+    color: #fff;
+    font-family: "DM Mono", monospace;
+    position: relative;
     height: 5rem;
     width: 100%;
 }
 
 .buttons {
-    background-color: green;
+    background-color: blue;
     height: 10rem;
     width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "DM Mono", monospace;
+    background-color: red;
+    color: #ffffff; 
+    cursor: pointer;
+    border: none;
+    margin-inline: 1rem;
+    text-decoration: none;
 }
