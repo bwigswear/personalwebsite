@@ -3,6 +3,7 @@ import { useState} from 'react';
 import { motion } from 'framer-motion';
 import classes from './NavHeader.module.css';
 import HeaderToggle from './HeaderToggle.jsx';
+import NavLinks from './NavLinks';
 
 const NavHeader = () => {
 
@@ -13,7 +14,7 @@ const NavHeader = () => {
             clipPath: "circle(1500px at 50px 50px)",
             transition: {
                 type: "spring",
-                stiffness: 20
+                stiffness: 20,
             }
         },
         closed: {
@@ -29,7 +30,7 @@ const NavHeader = () => {
     return (
         <motion.div className={classes.navbar} animate={open ? "open" : "closed"}>
             <motion.div className={classes.background} variants={variants}>
-                Links
+                <NavLinks />
             </motion.div>
             <HeaderToggle className={classes.toggle} setOpen={setOpen}/>
         </motion.div>
