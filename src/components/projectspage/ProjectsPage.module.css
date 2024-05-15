@@ -1,0 +1,9 @@
+.container {
+    background-color: transparent;
+}
+
+section {
+    height: 100rem;
+    width: 100%;
+    background-color: red;
+}

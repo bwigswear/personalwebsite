@@ -9,7 +9,7 @@ const Reference = React.forwardRef((props, ref) => (
 
 const MotionLink = motion(Reference);
 
-const Links = () => {
+const NavLinks = () => {
     const items = [
         ["Home", "/"], 
         ["About", "/about"], 
@@ -41,4 +41,4 @@ const Links = () => {
     );
 };
 
-export default Links
+export default NavLinks

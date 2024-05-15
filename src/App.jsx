@@ -2,12 +2,12 @@ import { useState, useEffect } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion'
 
-import NavHeader from '../components/navbar/NavHeader.jsx';
+import NavHeader from './components/navbar/NavHeader.jsx';
+import Sidebar from './components/sidebar/Sidebar.jsx';
 import classes from './App.module.css';
 
 const App = () => {
   const path = useLocation();
-
 
   return (
     <div>
@@ -16,6 +16,7 @@ const App = () => {
         animate={{ background: 'linear-gradient(45deg, #ff00ff, #6b0d7a)' }}
         transition={{ duration: 2, repeat: Infinity, repeatType: 'reverse', ease: 'linear' }}
         >
+        {path.pathname !== '/' && <Sidebar />}
         {path.pathname !== '/' && <NavHeader />}
         <Outlet />
         {/*<h1>Hello World!</h1>
@@ -26,16 +27,4 @@ const App = () => {
   );
 };
 
-export default App;
-
-/*const [settingsAreOpen, setSettingsAreOpen] = useState(false);
-
-  function openSettings(event){
-    setSettingsAreOpen(true);
-  };
-
-  function closeSettings(event){
-    setSettingsAreOpen(false);
-  };       
-
-{{settingsAreOpen && (<SettingsBackdrop onClose={closeSettings}><Settings onClose={closeSettings}/></SettingsBackdrop>)}*/
+export default App

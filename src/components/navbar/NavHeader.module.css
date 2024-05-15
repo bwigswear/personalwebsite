@@ -1,23 +1,45 @@
 .navbar {
-    display: flex;
-}
-
-.background {
-    position: fixed;
+    position: relative;
+    width: 100%;
     top: 0;
     left: 0;
     right: 0;
     height: 5rem;
-    background: transparent;
+}
+.wrapper {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
 }
 
-button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    background-color: transparent;
+.button {
+    font-size: 1.7rem;
+    font-weight: 800;
+    font-family: times new roman, serif;
+    color: #000; 
+    background-color: transparent; 
+    cursor: pointer;
     border: none;
+    margin-inline: 1rem;
+    text-decoration: none;
+}
+
+.internallinks{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.externallinks{
+    justify-content: flex-end;
+    display: flex;
+    gap: 1.3rem;
+}
+
+.externallinks img{
+    width: 2rem;
+    height: 2rem;
 }
