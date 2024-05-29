@@ -10,7 +10,7 @@
 }
 
 .intro {
-    color: black;
+    color: white;
     height: 5rem;
     font-family: "DM Mono", monospace;
     display: flex;
@@ -22,7 +22,7 @@
 }
 
 .welcome {
-    color: black;
+    color: white;
     font-weight: 400;
     font-size: 1.3rem;
     font-family: "DM Mono", monospace;
@@ -33,6 +33,7 @@
 }
 
 .buttons {
+    color: white;
     height: 10rem;
     width: 100%;
     display: flex;
