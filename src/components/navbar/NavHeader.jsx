@@ -22,10 +22,9 @@ const Links = () => {
     return (
         <div className={classes.navbar}>
             <div className={classes.wrapper}>
-                <div classname={classes.internallinks}>
+                <div className={classes.internallinks}>
                     {items.map((item) => (
-                        <MotionLink whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}
-                        to={item[1]} className={classes.button}>
+                        <MotionLink to={item[1]} className={classes.button}>
                             {item[0]}
                         </MotionLink>
                     ))}

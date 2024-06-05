@@ -10,10 +10,10 @@ const ProjectsPage = () => {
     return(
         <div className={classes.container}>
             <div>{projects.map((label) => (<a href={`#${label}`}>{label}</a>))}s</div>
-            <section id="p1">Project1</section>
-            <section id="p2">Project2</section>
-            <section id="p3">Project3</section>
-            <section id="p4">Project4</section>
+            <section id="projects1">Project1</section>
+            <section id="projects2">Project2</section>
+            <section id="projects3">Project3</section>
+            <section id="projects4">Project4</section>
         </div>
     );
 };
