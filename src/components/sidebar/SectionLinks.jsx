@@ -1,4 +1,5 @@
 import { useLocation } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import classes from './SectionLinks.module.css';
 
 const SectionLinks = () => {
@@ -12,11 +13,12 @@ const SectionLinks = () => {
 
     const linkList = linkLists[useLocation().pathname];
 
-    return <div className={classes.links}>
+    return (<motion.div className={classes.links}>
         {linkList.map(link =>(
-            <a href={`#${link}`} key={link}>{link}</a>
+            <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}
+            href={`#${link}`} key={link}>{link}</motion.a>
         ))}
-    </div>;
+    </motion.div>);
 }
 
 export default SectionLinks

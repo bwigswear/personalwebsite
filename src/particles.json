@@ -1,248 +1,108 @@
 {
-    "autoPlay": true,
-    "background": {
-      "color": {
-        "value": "#0d47a1"
-      },
-      "opacity": 0
+  "autoPlay": true,
+  "background": {
+    "color": {
+      "value": "transparent"
     },
-    "backgroundMask": {
-      "composite": "destination-out",
-      "cover": {
-        "color": {
-          "value": "#fff"
-        },
-        "opacity": 1
+    "opacity": 1
+  },
+  "fullScreen": {
+    "enable": true,
+    "zIndex": 0
+  },
+  "detectRetina": true,
+  "fpsLimit": 120,
+  "particles": {
+    "number": {
+      "value": 190,
+      "density": {
+        "enable": false,
+        "area": 800
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle"
+    },
+    "opacity": {
+      "value": 1
+    },
+    "size": {
+      "value": 3
+    },
+    "move": {
+      "enable": true,
+      "direction": "right",
+      "speed": 2,
+      "outModes": {
+        "default": "out"
       },
+      "random": false,
+      "straight": false,
+      "angle": {
+        "value": 10,
+        "offset": 0
+      }
+    },
+    "collisions": {
       "enable": false
     },
-    "fullScreen": {
-      "enable": true,
-      "zIndex": 0
+    "zIndex": {
+      "value": 5,
+      "opacityRate": 0.5,
+      "sizeRate": 1,
+      "velocityRate": 2
     },
-    "detectRetina": true,
-    "fpsLimit": 120,
-    "interactivity": {
-      "detectsOn": "window",
-      "events": {
-        "onClick": {
-          "enable": true,
-          "mode": "push"
+    "groups": {
+      "group1": {
+        "number": {
+          "value": 70
         },
-        "onDiv": {
-          "selectors": [],
-          "enable": false,
-          "mode": [],
-          "type": "circle"
-        },
-        "onHover": {
-          "enable": true,
-          "mode": "grab",
-          "parallax": {
-            "enable": true,
-            "force": 60,
-            "smooth": 10
-          }
-        },
-        "resize": {
-          "enable": true,
-          "delay": 0.5
+        "zIndex": {
+          "value": 50
         }
       },
-      "modes": {
-        "trail": {
-          "delay": 1,
-          "pauseOnStop": false,
-          "quantity": 1
+      "group2": {
+        "number": {
+          "value": 30
         },
-        "attract": {
-          "distance": 200,
-          "duration": 0.4,
-          "easing": "ease-out-quad",
-          "factor": 1,
-          "maxSpeed": 50,
-          "speed": 1
-        },
-        "bounce": {
-          "distance": 200
-        },
-        "bubble": {
-          "distance": 400,
-          "duration": 2,
-          "mix": false,
-          "opacity": 0.8,
-          "size": 40,
-          "divs": {
-            "distance": 200,
-            "duration": 0.4,
-            "mix": false,
-            "selectors": []
-          }
-        },
-        "connect": {
-          "distance": 80,
-          "links": {
-            "opacity": 0.5
-          },
-          "radius": 60
-        },
-        "grab": {
-          "distance": 400,
-          "links": {
-            "blink": false,
-            "consent": false,
-            "opacity": 1
-          }
-        },
-        "push": {
-          "quantity": 4
-        },
-        "remove": {
-          "quantity": 2
-        },
-        "repulse": {
-          "distance": 200,
-          "duration": 0.4,
-          "factor": 100,
-          "speed": 1,
-          "maxSpeed": 50,
-          "easing": "ease-out-quad",
-          "divs": {
-            "distance": 200,
-            "duration": 0.4,
-            "factor": 100,
-            "speed": 1,
-            "maxSpeed": 50,
-            "easing": "ease-out-quad",
-            "selectors": []
-          }
-        },
-        "slow": {
-          "factor": 3,
-          "radius": 200
-        },
-        "light": {
-          "area": {
-            "gradient": {
-              "start": {
-                "value": "#ffffff"
-              },
-              "stop": {
-                "value": "#000000"
-              }
-            },
-            "radius": 1000
-          },
-          "shadow": {
-            "color": {
-              "value": "#000000"
-            },
-            "length": 2000
-          }
-        }
-      }
-    },
-    "particles": {
-      "bounce": {
-        "horizontal": {
-          "value": 1
-        },
-        "vertical": {
-          "value": 1
+        "zIndex": {
+          "value": 75
         }
       },
-      "collisions": {
-        "enable": false,
-        "mode": "bounce"
-      },
-      "color": {
-        "value": "#ffffff"
-      },
-      "move": {
-        "angle": {
-          "offset": 0,
-          "value": 90
+      "group3": {
+        "number": {
+          "value": 50
         },
-        "attract": {
-          "distance": 200,
-          "enable": false,
-          "rotate": {
-            "x": 3000,
-            "y": 3000
-          }
-        },
-        "center": {
-          "x": 50,
-          "y": 50,
-          "mode": "percent",
-          "radius": 0
-        },
-        "direction": "none",
-        "enable": true,
-        "outModes": {
-          "default": "bounce"
-        },
-        "random": false,
-        "speed": 6,
-        "straight": false,
-        "trail": {
-          "enable": false,
-          "length": 10
+        "zIndex": {
+          "value": 25
         }
       },
-      "number": {
-        "density": {
-          "enable": true,
-          "width": 1920,
-          "height": 1080
+      "group4": {
+        "number": {
+          "value": 40
         },
-        "value": 80
-      },
-      "opacity": {
-        "value": 0.5,
-        "animation": {
-          "enable": true,
-          "speed": 3,
-          "sync": false,
-          "startValue": "random",
-          "destroy": "none"
+        "zIndex": {
+          "value": 10
         }
-      },
-      "shape": {
-        "type": "circle"
-      },
-      "size": {
-        "value": {
-          "min": 1,
-          "max": 5
-        },
-        "animation": {
-          "enable": true,
-          "speed": 20,
-          "sync": false,
-          "startValue": "random",
-          "destroy": "none"
-        }
-      },
-      "links": {
-        "color": {
-          "value": "#ffffff"
-        },
-        "distance": 150,
-        "enable": true,
-        "opacity": 0.5,
-        "width": 1
-      }
-    },
-    "pauseOnBlur": true,
-    "pauseOnOutsideViewport": true,
-    "zLayers": 100,
-    "motion": {
-      "disable": false,
-      "reduce": {
-        "factor": 4,
-        "value": true
       }
     }
+  },
+  "interactivity": {
+    "events": {
+      "resize": {
+        "enable": true,
+        "delay": 0.5
+      }
+    }
+  },
+  "motion": {
+    "disable": false,
+    "reduce": {
+      "factor": 2,
+      "value": true
+    }
   }
-  
+}

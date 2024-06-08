@@ -1,4 +1,5 @@
 import classes from './ProjectsPage.module.css';
+import PageSection from '../PageSection.jsx';
 
 
 const ProjectsPage = () => {
@@ -9,11 +10,10 @@ const ProjectsPage = () => {
 
     return(
         <div className={classes.container}>
-            <div>{projects.map((label) => (<a href={`#${label}`}>{label}</a>))}s</div>
-            <section id="projects1">Project1</section>
-            <section id="projects2">Project2</section>
-            <section id="projects3">Project3</section>
-            <section id="projects4">Project4</section>
+            <PageSection id="projects1">Project1</PageSection>
+            <PageSection id="projects2">Project2</PageSection>
+            <PageSection id="projects3">Project3</PageSection>
+            <PageSection id="projects4">Project4</PageSection>
         </div>
     );
 };

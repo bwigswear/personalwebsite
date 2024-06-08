@@ -17,7 +17,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    left: 3rem;
+    
     font-size: 3rem;
     gap: 1.5rem;
 }
@@ -36,7 +36,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 2.7rem;
 }
 
 .button {

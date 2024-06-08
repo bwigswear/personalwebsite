@@ -12,6 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 90%;
     height: 100%;
 }
 
@@ -46,7 +47,7 @@
 .externallinks{
     justify-content: flex-end;
     display: flex;
-    gap: 1.3rem;
+    gap: 1.6rem;
 }
 
 .externallinks img{

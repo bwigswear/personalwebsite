@@ -24,7 +24,7 @@ const App = () => {
   }, [controls]);
 
   return (
-    <div>
+    <div className={classes.appContainer}>
       <motion.div className={classes.background}
       style={{
         background: 'radial-gradient(125% 130% at 40% 0%, #000000 50%, #67209e)',
@@ -32,10 +32,9 @@ const App = () => {
       }}
       animate={controls}
         >
-        <ParticlesComponent className={classes.particles}/>
         {path.pathname !== '/' && <Sidebar />}
         {path.pathname !== '/' && <NavHeader />}
-        <Outlet exit={{ x: -300, opacity: 0 }}/>
+        <Outlet/>
       </ motion.div>
     </ div>
   );

@@ -24,18 +24,18 @@ const Links = () => {
             <div className={classes.wrapper}>
                 <div className={classes.internallinks}>
                     {items.map((item) => (
-                        <MotionLink to={item[1]} className={classes.button}>
+                        <MotionLink to={item[1]} className={classes.button} key={item[0]}>
                             {item[0]}
                         </MotionLink>
                     ))}
                 </div>
                 <div className={classes.externallinks}>
                     <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}
-                    href='#'><img src='../../images/mail-icon-black.png'/></motion.a>
+                    href='#'><img src='../../images/mail-icon-white.png'/></motion.a>
                     <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}
-                    href='#'><img src='../../images/github-logo-black.png'/></motion.a>
+                    href='#'><img src='../../images/github-logo-white.png'/></motion.a>
                     <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}
-                    href='#'><img src='../../images/linkedin-logo-black.png'/></motion.a>
+                    href='#'><img src='../../images/linkedin-logo-white.png'/></motion.a>
                 </div>
             </div>
         </div>
